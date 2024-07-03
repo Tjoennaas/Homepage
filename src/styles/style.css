@@ -1,14 +1,18 @@
+
+
+/*--- frontpage ---*/
+
 body {
+    box-sizing: border-box;
+	padding: 0;
     margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
+    font-family: Arial, sans-serif; 
 }
 
 .frontpage{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .frontpage-navigation {
@@ -37,18 +41,61 @@ h2{
 }
 
 .link-forntpage{
+    display: flex;
     color: rgb(140, 152, 148);
 }
 
- .artists { 
+.link-forntpage-artist{
+    display: none;
+    color:black; 
+}
+
+.artists { 
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
  }
 
- footer{
+.artists-name{ 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    gap: 3rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid rgb(144, 144, 180);
+}
+
+/*------------ page adele and espen --------------*/
+
+.frontpage-for-espen,
+.frontpage-for-adele {
+     display: none;
+     flex-direction: column; 
+     align-items: center;
+}
+
+.filter-espen, 
+.filter-adele{
+     display: flex;
+     flex-direction: row;
+     gap: 2rem; 
  }
+
+ .filter-espen p, 
+ .filter-adele p {
+     border: 1px solid rgb(131, 122, 122);
+     padding: 0.2rem;
+ }  
+
+img{
+    width:10%;
+}
+ /*-----------------*/
+
+ li{
+	list-style: none;
+}
