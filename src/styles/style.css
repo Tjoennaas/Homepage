@@ -92,10 +92,27 @@ footer {
  }  
 
 img{
-    width:10%;
+    width:30%;
 }
  /*-----------------*/
 
  li{
 	list-style: none;
+}
+
+
+/*--------------*/
+
+.filter-painting {
+    cursor: pointer;
+    color: blue;
+}
+.filter-dga {
+    cursor: pointer;
+    color: black;
+}
+
+.filter-dga--visible{
+   color: blue;
+
 }
